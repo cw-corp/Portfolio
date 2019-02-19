@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    padding: 0;
+    margin: 0px;
+}
+
+
+
+
+nav {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+}
+nav a{
+    color: black;
+}
+.sect{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+    
+
+}
+
+/* .slider{
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% auto; 
+    position: auto; 
+     height: 100%;
+    width: 100%; 
+    background: url("./images/beach.jpeg");
+    
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url("./images/beach.jpeg") no-repeat fixed;
+    }
+    50%{
+        background: url("./images/lightbulb_image.jpg") no-repeat fixed;
+    }
+    75%{
+        background: url("./images/beach.jpeg") no-repeat;
+    }
+    100%{
+        background: url("./images/Topspot.png") no-repeat;
+    }
+} */
+
+.slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./images/change-calculator.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: absolute;
+}
+.slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 20s infinite;
+    overflow: hidden;
+
+}
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url("./images/Topspot.png");
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(2){
+    animation-delay: 6s;
+    background-image: url("./images/computerdesk.jpg");
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(3){
+    animation-delay: 11s;
+    background-image: url("./images/budget-image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+slide p{
+    font-family: Comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+@keyframes slide{
+    0% { left: 100%; width: 100%;}
+    5% { left: 0%;}
+    25% { left: 0%;}
+    30% { left: -100%; width: 100%;}
+    30.001% { left: -100%; width: 0%;}
+    100% { left: 100%; width: 0%;}
+}
+
+ .headshot{
+    content: url("./images/headshot.jpg");
+    border-radius: 50%; 
+    max-width: 20rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    bottom: 12px;
+    left: 0;  
+
+}
+.headshot:after{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    margin: 0 0 -2px;
+}
+/* a#budget-tracker{
+    background-image: url("./images/budget\ tracker\ image.png");
+    display: block;
+    width: 10%;
+    height: 10%;
+    
+} */
+
+
+.subSection{
+    height: 50%;
+    background-color: #1f1f1f;
+}
+.row{
+    display: inline-block;
+    margin: 1em;
+    width: 200px
+    /* padding: 5px; */
+}
+.row2{
+    display: inline-block;
+    margin: 1em;
+    width: 200px;
+    /* padding: 5px; */
+}
+.row3{
+    display: inline-block;
+    margin: 1em;
+    width: 200px;
+    /* padding: 5px; */
+}
+
+nav a{
+    background-color: red;
+    color: black;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:active{
+    color:#F8F8FF;
+}
+
+.sectTwo {
+    
+    background-image: url("./images/collaborate.jpg");
+    
+}
+.sectThree {
+    
+    background-image: url("./images/dealdone.jpg");
+    
+}
